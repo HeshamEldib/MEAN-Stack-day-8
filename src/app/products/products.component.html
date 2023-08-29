@@ -1,0 +1,17 @@
+<div class="row gap-1 py-4">
+  <div class="card" style="width: 16rem;" *ngFor="let product of products">
+    <a class="link-dark link-underline link-underline-opacity-0" [routerLink]="['/product', product.id]">
+      <!-- <img src="{{product.image}}" class="card-img-top" alt="..."> -->
+      <div class="card-body">
+        <h5 class="card-title">{{product.title}}</h5>
+        <h6 class="card-title">{{product.price}}</h6>
+        <p class="card-text">{{product.description}}</p>
+        <div class="card-text d-flex justify-content-between">
+          <span>rate: {{product.rating.rate}}</span>
+          <span>count: {{product.rating.count}}</span>
+        </div>
+      </div>
+    </a>
+  </div>
+
+</div>

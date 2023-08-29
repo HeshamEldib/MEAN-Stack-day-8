@@ -1,0 +1,33 @@
+<div class="product py-5">
+  <div class="container-product">
+    <div class="ui-item">
+      <div class="ui-head">
+        <div class="ui-trans clearfix">
+          <!-- <img
+            src="{{ selectedProduct.image }}"
+            class="card-img-top"
+            alt="..."
+          /> -->
+
+          <div class="ui-review">
+            <h3>{{ selectedProduct?.title }}</h3>
+
+            <p>
+              {{ selectedProduct?.description }}
+            </p>
+          </div>
+          <div>
+            <h5 class="text-end">{{ selectedProduct?.price }}$</h5>
+            <div class="card-text d-flex">
+              <span class="me-3">rate: {{selectedProduct?.rating.rate}}</span>
+              <span>count: {{selectedProduct?.rating.count}}</span>
+            </div>
+          </div>
+          <div class="text-center mt-2">
+            <button type="button" class="btn btn-warning">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
